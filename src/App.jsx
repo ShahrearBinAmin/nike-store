@@ -3,6 +3,7 @@ import "./App.css";
 import logoImg from "./assets/logo.png";
 import searchImg from "./assets/search.png";
 import shoeImg from "./assets/shoe.png";
+import TopNav from "./components/TopNav";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
           </div>
         </div>
         <div className="navbar-right">
-          <ul>
+          <TopNav />
+          {/* <ul>
             <li>
               <a href="#"></a>
             </li>
@@ -41,7 +43,7 @@ function App() {
             <li>
               <a href="#"></a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       <div className="content">

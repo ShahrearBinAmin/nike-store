@@ -1,0 +1,11 @@
+.right-nav {
+  display: flex;
+  padding: 35px 50px 10px 50px;
+  float: right;
+}
+
+.right-nav > .MuiSvgIcon-root {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 0px 15px;
+}
