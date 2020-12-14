@@ -12,6 +12,7 @@
     url("assets/background.jpg");
   background-position: center;
   background-size: cover;
+  font-family: sans-serif;
 }
 
 .navbar {
@@ -54,4 +55,173 @@
 .navbar-right {
   flex-basis: 30%;
   background-color: white;
+}
+
+.content {
+  display: flex;
+  height: 88%;
+}
+
+.content-left {
+  flex-basis: 70%;
+  position: relative;
+}
+
+.upper-text {
+  left: 15%;
+  top: 20%;
+  position: absolute;
+  color: lightblue;
+  opacity: 0.5;
+}
+
+.upper-text h1 {
+  font-size: 150px;
+  margin-left: 150px;
+  font-style: italic;
+  line-height: 90px;
+}
+
+.upper-text h2 {
+  font-size: 80px;
+  letter-spacing: 0.5px;
+}
+
+.lower-text {
+  left: 55%;
+  bottom: 12%;
+  position: absolute;
+  color: lightblue;
+  opacity: 0.5;
+}
+
+.lower-text h1 {
+  font-size: 100px;
+  margin-left: 100px;
+  line-height: 50px;
+}
+
+.lower-text h2 {
+  font-size: 60px;
+}
+
+.lower-text h3 {
+  font-size: 40px;
+  margin-left: 225px;
+  line-height: 10px;
+}
+
+.content-left img {
+  position: absolute;
+  z-index: 2;
+  top: -10%;
+  right: -15%;
+}
+
+.content-right {
+  flex-basis: 30%;
+  position: relative;
+  background-color: white;
+}
+
+.content-right img {
+  top: -7%;
+  left: 25%;
+  opacity: 0.1;
+  position: absolute;
+  max-height: 20rem;
+}
+
+.product-details {
+  bottom: 10%;
+  left: 10%;
+  position: absolute;
+  margin-bottom: 20px;
+}
+
+.price-box {
+  display: flex;
+  height: 150px;
+  width: 170px;
+  align-items: center;
+  box-shadow: -40px 0 20px -40px rgba(189, 189, 180, 0.5),
+    40px 0 20px -40px rgba(189, 189, 180, 0.5);
+}
+
+.price {
+  flex-basis: 70%;
+}
+
+.price h2 {
+  font-size: 22px;
+  margin-left: 20px;
+  color: #999;
+}
+
+.price h1 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.price h3 {
+  margin-left: 20px;
+  color: #ccc;
+}
+
+.varient {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.varient div {
+  height: 13px;
+  width: 13px;
+  margin: 5px auto;
+}
+
+.varient div:nth-child(1) {
+  background-color: blue;
+  transform: scale(1.5);
+}
+.varient div:nth-child(2) {
+  background-color: red;
+}
+
+.varient div:nth-child(3) {
+  background-color: lime;
+}
+
+.varient div:nth-child(4) {
+  background-color: grey;
+}
+
+.varient div:nth-child(5) {
+  background-color: black;
+}
+
+.product-details p {
+  text-align: right;
+  color: #9999;
+  font-size: 15px;
+}
+
+.social-links {
+  bottom: 15%;
+  right: -18%;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.social-links ul {
+}
+
+.social-links ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px 15px;
+}
+
+.social-links ul li a {
+  text-decoration: none;
+  color: #999;
 }
