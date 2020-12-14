@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 105, 233, 0.8),
+      rgba(0, 105, 233, 0.8)
+    ),
+    url("assets/background.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  height: 12%;
+}
+
+.navbar-left {
+  flex-basis: 70%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-inner {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 45px 50px 10px 50px;
+  max-height: 45%;
+}
+
+.navbar-inner ul {
+  margin-left: 20px;
+  z-index: 2;
+}
+
+.navbar-inner ul li {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.navbar-inner ul li a {
+  text-decoration: none;
   color: white;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  max-height: 12rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-right {
+  flex-basis: 30%;
+  background-color: white;
 }
